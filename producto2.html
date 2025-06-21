@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cortina Sheer - Detalles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+    }
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Sheer</h1>
+  </header>
+
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <!-- Carrusel con imágenes -->
+      <div class="col-md-6">
+        <div id="carouselExample" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img src="https://scontent.fpei2-2.fna.fbcdn.net/v/t1.6435-9/124453785_3035455523222126_4540297337696764760_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EfbG07lYhjEQ7kNvwFUVUje&_nc_oc=Admzd98IYSabZA0v6-JtukxmL3S1aIkLZQZTysz8822xaQcihDVAQQd9hk3rZX2hgl4&_nc_zt=23&_nc_ht=scontent.fpei2-2.fna&_nc_gid=0bsMCQLcsysQVLb3v55N5A&oh=00_AfOVapDneSEEk9WjCq1ea4eitC0-3e4XohxOKsROodWCWQ&oe=686AB85E" class="d-block w-100" alt="Cortina 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.postimg.cc/y8T1bf5S/Imagen-de-Whats-App-2025-06-07-a-las-19-00-57-dc74f7c6.jpg" class="d-block w-100" alt="Cortina 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="https://scontent.fpei2-2.fna.fbcdn.net/v/t1.6435-9/116178121_2724446014323080_3814250289010877146_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PsbPANkab7sQ7kNvwELPFlp&_nc_oc=AdkKTACSuN6iPvz3g8YGJjTG5XUH1AaufPYjRNhHhAkgnScbaterxyUtCebfG9ZVOmI&_nc_zt=23&_nc_ht=scontent.fpei2-2.fna&_nc_gid=0bsMCQLcsysQVLb3v55N5A&oh=00_AfMaYAgzbBGh_bF2sStTL5iz_poAhMHRf2pMX1JAjajNrw&oe=686AD337" class="d-block w-100" alt="Cortina 3" />
+            </div>
+          </div>
+
+          <!-- Flechas para cambiar imagen -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Texto con descripción y precio -->
+      <div class="col-md-6">
+        <h2>Descripción</h2>
+        <p>La Cortina Sheer es perfecta para quienes buscan un ambiente elegante, suave y lleno de luz natural. Confeccionada con tela translúcida de alta calidad, esta cortina permite el paso de la luz mientras mantiene la privacidad en interiores. Su diseño liviano y delicado añade un toque sofisticado a cualquier espacio, ideal para salas, comedores o recámaras, Disponible en múltiples estilos, texturas y colores que se adaptan a tus espacios.</p>
+        <h3>Precio:</h3>
+        <p>$120.000 COP</p>
+
+        <button id="pedidoBtn" class="btn btn-primary btn-lg mt-3">
+          🛒 Solicitar pedido
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <a href="index.html" class="text-white">← Regresar a la galería</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('pedidoBtn').addEventListener('click', function() {
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = 'pedidos.html';
+      }, 600); // tiempo igual a la duración del fade-out
+    });
+  </script>
+
+</body>
+</html>

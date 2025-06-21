@@ -1,0 +1,15 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+img {
+  object-fit: cover;
+  max-height: 300px;
+}
+body {
+  background-image: url('https://www.freepik.es/fotos-vectores-gratis/cortina-fondo');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
